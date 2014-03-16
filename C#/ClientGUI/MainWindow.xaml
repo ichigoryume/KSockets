@@ -1,0 +1,82 @@
+﻿<Window x:Class="ClientGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Client GUI" Height="400" Width="520">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Setting Group Box -->
+        <GroupBox Header="Setting" Grid.Row="0" HorizontalAlignment="Left" Width="500">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Label Content="Server Address :" HorizontalAlignment="Right"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
+                    <TextBox Name="serverAddressTextBox" Width="150" VerticalContentAlignment="Center" Text="127.0.0.1"/>
+                    <Label Content="Port :" />
+                    <TextBox Name="serverPortTextBox" Width="70" VerticalContentAlignment="Center" Text="8029"/>
+                </StackPanel>
+
+                <Label Content="Protocol :" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="1" Grid.Row="1">
+                    <RadioButton Name="variableSizeMessageRadioButton">
+                        <RadioButton.Content>
+                            <Label Content="Variable Size Message" />
+                        </RadioButton.Content>
+                    </RadioButton>
+                    <RadioButton Name="fixedSizeMessageRadioButton" IsChecked="True">
+                        <RadioButton.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox Name="messageSizeTextBox" Width="50" VerticalAlignment="Center" Text="32"/>
+                                <Label Content="Bytes Message" />
+                            </StackPanel>
+                        </RadioButton.Content>
+                    </RadioButton>
+                    <RadioButton Name="terminatedMessageRadioButton">
+                        <RadioButton.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Termination String :" />
+                                <TextBox Name="terminationStringTextBox" Width="100" VerticalContentAlignment="Center" Text="\n"/>
+                            </StackPanel>
+                        </RadioButton.Content>
+                    </RadioButton>
+                </StackPanel>
+                
+                <ToggleButton Name="connectButton" Content="Connect" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="100" Checked="connectButton_Checked" Unchecked="connectButton_Unchecked"/>
+            </Grid>
+
+        </GroupBox>
+
+        <!--= Send Message Group Box -->
+        <GroupBox Header="Message" Grid.Row="1" HorizontalAlignment="Left" Width="500">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox Name="messageTextBox" Text="hoge"/>
+                <Button Name="sendButton" Content="Send" Grid.Column="1" Width="100" Click="sendButton_Click" />
+            </Grid>
+        </GroupBox>
+        
+        <!-- Log Panel -->
+        <GroupBox Grid.Row="2">
+            <TextBox Name="logPanel" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  AcceptsReturn="True" AcceptsTab="True"/>
+        </GroupBox>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+bin/
+obj/
+
+project.xcworkspace/
+xcuserdata/
+build/
+
+*~
+*.swp
+*.DS_Store
+*.xccheckout

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA10A43B1810EAB000EB7738 /* KSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A43A1810EAB000EB7738 /* KSEvent.m */; };
+		AAA0E5CD16B4C5FD002F536E /* KSReceiveBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA0E5CC16B4C5FD002F536E /* KSReceiveBufferTest.m */; };
+		AAA0E5D016B506A1002F536E /* KSFixedSizeMessageReceiverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA0E5CF16B506A1002F536E /* KSFixedSizeMessageReceiverTest.m */; };
+		AAA0E5D316B50CC6002F536E /* KSTerminatedMessageReceiverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA0E5D216B50CC6002F536E /* KSTerminatedMessageReceiverTest.m */; };
+		AAA0E5D916B51574002F536E /* KSVariableSizeMessageReceiverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA0E5D816B51574002F536E /* KSVariableSizeMessageReceiverTest.m */; };
+		AAAE552B1813B50300158D66 /* KSClientSocket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAD47DA11812717600A934FF /* KSClientSocket.h */; };
+		AAAE55741813C41900158D66 /* KSEvent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA10A4391810EAB000EB7738 /* KSEvent.h */; };
+		AAC10F1116ACE8C9002050B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC10F1016ACE8C9002050B4 /* Foundation.framework */; };
+		AAC10F2016ACE8C9002050B4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC10F1F16ACE8C9002050B4 /* SenTestingKit.framework */; };
+		AAC10F2216ACE8C9002050B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC10F2116ACE8C9002050B4 /* UIKit.framework */; };
+		AAC10F2316ACE8C9002050B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC10F1016ACE8C9002050B4 /* Foundation.framework */; };
+		AAC10F2616ACE8C9002050B4 /* libKSockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC10F0D16ACE8C9002050B4 /* libKSockets.a */; };
+		AAC10F2C16ACE8C9002050B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC10F2A16ACE8C9002050B4 /* InfoPlist.strings */; };
+		AAC10F4016ACFAF2002050B4 /* KSFixedSizeMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3A16ACFAF2002050B4 /* KSFixedSizeMessageSender.m */; };
+		AAC10F4116ACFAF2002050B4 /* KSFixedSizeMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3A16ACFAF2002050B4 /* KSFixedSizeMessageSender.m */; };
+		AAC10F4216ACFAF2002050B4 /* KSTerminatedMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3D16ACFAF2002050B4 /* KSTerminatedMessageSender.m */; };
+		AAC10F4316ACFAF2002050B4 /* KSTerminatedMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3D16ACFAF2002050B4 /* KSTerminatedMessageSender.m */; };
+		AAC10F4416ACFAF2002050B4 /* KSVariableSizeMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3F16ACFAF2002050B4 /* KSVariableSizeMessageSender.m */; };
+		AAC10F4516ACFAF2002050B4 /* KSVariableSizeMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F3F16ACFAF2002050B4 /* KSVariableSizeMessageSender.m */; };
+		AAC10F4916ACFB3D002050B4 /* KSPosixAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F4816ACFB3D002050B4 /* KSPosixAPIWrapper.m */; };
+		AAC10F4A16ACFB3D002050B4 /* KSPosixAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F4816ACFB3D002050B4 /* KSPosixAPIWrapper.m */; };
+		AAC10F5B16AD3E78002050B4 /* KSFixedSizeMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5516AD3E78002050B4 /* KSFixedSizeMessageReceiver.m */; };
+		AAC10F5C16AD3E78002050B4 /* KSFixedSizeMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5516AD3E78002050B4 /* KSFixedSizeMessageReceiver.m */; };
+		AAC10F5D16AD3E78002050B4 /* KSTerminatedMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5816AD3E78002050B4 /* KSTerminatedMessageReceiver.m */; };
+		AAC10F5E16AD3E78002050B4 /* KSTerminatedMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5816AD3E78002050B4 /* KSTerminatedMessageReceiver.m */; };
+		AAC10F5F16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5A16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m */; };
+		AAC10F6016AD3E78002050B4 /* KSVariableSizeMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F5A16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m */; };
+		AAC10F6316AD432C002050B4 /* KSReceiveBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F6216AD432C002050B4 /* KSReceiveBuffer.m */; };
+		AAC10F6416AD432C002050B4 /* KSReceiveBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC10F6216AD432C002050B4 /* KSReceiveBuffer.m */; };
+		AAD47D961812292500A934FF /* KSATask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47D951812292500A934FF /* KSATask.m */; };
+		AAD47D9918122B6E00A934FF /* KSReceiveTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47D9818122B6E00A934FF /* KSReceiveTask.m */; };
+		AAD47D9C18122E8C00A934FF /* KSConnectTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47D9B18122E8C00A934FF /* KSConnectTask.m */; };
+		AAD47D9F181234B300A934FF /* KSAcceptTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47D9E181234B300A934FF /* KSAcceptTask.m */; };
+		AAD47DA31812717600A934FF /* KSClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47DA21812717600A934FF /* KSClientSocket.m */; };
+		AAD47DA61812718A00A934FF /* KSClientSocketStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD47DA51812718A00A934FF /* KSClientSocketStateMachine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAC10F2416ACE8C9002050B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAC10F0416ACE8C9002050B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC10F0C16ACE8C9002050B4;
+			remoteInfo = KSockets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAC10F0B16ACE8C9002050B4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				AAAE552B1813B50300158D66 /* KSClientSocket.h in CopyFiles */,
+				AAAE55741813C41900158D66 /* KSEvent.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA10A4391810EAB000EB7738 /* KSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSEvent.h; sourceTree = "<group>"; };
+		AA10A43A1810EAB000EB7738 /* KSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSEvent.m; sourceTree = "<group>"; };
+		AAA0E5CB16B4C5FD002F536E /* KSReceiveBufferTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReceiveBufferTest.h; sourceTree = "<group>"; };
+		AAA0E5CC16B4C5FD002F536E /* KSReceiveBufferTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReceiveBufferTest.m; sourceTree = "<group>"; };
+		AAA0E5CE16B506A1002F536E /* KSFixedSizeMessageReceiverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSFixedSizeMessageReceiverTest.h; sourceTree = "<group>"; };
+		AAA0E5CF16B506A1002F536E /* KSFixedSizeMessageReceiverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSFixedSizeMessageReceiverTest.m; sourceTree = "<group>"; };
+		AAA0E5D116B50CC6002F536E /* KSTerminatedMessageReceiverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTerminatedMessageReceiverTest.h; sourceTree = "<group>"; };
+		AAA0E5D216B50CC6002F536E /* KSTerminatedMessageReceiverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTerminatedMessageReceiverTest.m; sourceTree = "<group>"; };
+		AAA0E5D716B51574002F536E /* KSVariableSizeMessageReceiverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVariableSizeMessageReceiverTest.h; sourceTree = "<group>"; };
+		AAA0E5D816B51574002F536E /* KSVariableSizeMessageReceiverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVariableSizeMessageReceiverTest.m; sourceTree = "<group>"; };
+		AAAE55281813A12F00158D66 /* KSClientSocket_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSClientSocket_Internal.h; sourceTree = "<group>"; };
+		AAC10F0D16ACE8C9002050B4 /* libKSockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKSockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC10F1016ACE8C9002050B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAC10F1416ACE8C9002050B4 /* KSockets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSockets-Prefix.pch"; sourceTree = "<group>"; };
+		AAC10F1E16ACE8C9002050B4 /* KSocketsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSocketsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC10F1F16ACE8C9002050B4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AAC10F2116ACE8C9002050B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AAC10F2916ACE8C9002050B4 /* KSocketsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KSocketsTests-Info.plist"; sourceTree = "<group>"; };
+		AAC10F2B16ACE8C9002050B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAC10F3916ACFAF2002050B4 /* KSFixedSizeMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSFixedSizeMessageSender.h; sourceTree = "<group>"; };
+		AAC10F3A16ACFAF2002050B4 /* KSFixedSizeMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSFixedSizeMessageSender.m; sourceTree = "<group>"; };
+		AAC10F3B16ACFAF2002050B4 /* KSISender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSISender.h; sourceTree = "<group>"; };
+		AAC10F3C16ACFAF2002050B4 /* KSTerminatedMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTerminatedMessageSender.h; sourceTree = "<group>"; };
+		AAC10F3D16ACFAF2002050B4 /* KSTerminatedMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTerminatedMessageSender.m; sourceTree = "<group>"; };
+		AAC10F3E16ACFAF2002050B4 /* KSVariableSizeMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVariableSizeMessageSender.h; sourceTree = "<group>"; };
+		AAC10F3F16ACFAF2002050B4 /* KSVariableSizeMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVariableSizeMessageSender.m; sourceTree = "<group>"; };
+		AAC10F4716ACFB3D002050B4 /* KSPosixAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPosixAPIWrapper.h; sourceTree = "<group>"; };
+		AAC10F4816ACFB3D002050B4 /* KSPosixAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPosixAPIWrapper.m; sourceTree = "<group>"; };
+		AAC10F5416AD3E78002050B4 /* KSFixedSizeMessageReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSFixedSizeMessageReceiver.h; sourceTree = "<group>"; };
+		AAC10F5516AD3E78002050B4 /* KSFixedSizeMessageReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSFixedSizeMessageReceiver.m; sourceTree = "<group>"; };
+		AAC10F5616AD3E78002050B4 /* KSIReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSIReceiver.h; sourceTree = "<group>"; };
+		AAC10F5716AD3E78002050B4 /* KSTerminatedMessageReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTerminatedMessageReceiver.h; sourceTree = "<group>"; };
+		AAC10F5816AD3E78002050B4 /* KSTerminatedMessageReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTerminatedMessageReceiver.m; sourceTree = "<group>"; };
+		AAC10F5916AD3E78002050B4 /* KSVariableSizeMessageReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVariableSizeMessageReceiver.h; sourceTree = "<group>"; };
+		AAC10F5A16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVariableSizeMessageReceiver.m; sourceTree = "<group>"; };
+		AAC10F6116AD432C002050B4 /* KSReceiveBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReceiveBuffer.h; sourceTree = "<group>"; };
+		AAC10F6216AD432C002050B4 /* KSReceiveBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReceiveBuffer.m; sourceTree = "<group>"; };
+		AAD47D941812292500A934FF /* KSATask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSATask.h; sourceTree = "<group>"; };
+		AAD47D951812292500A934FF /* KSATask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSATask.m; sourceTree = "<group>"; };
+		AAD47D9718122B6E00A934FF /* KSReceiveTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReceiveTask.h; sourceTree = "<group>"; };
+		AAD47D9818122B6E00A934FF /* KSReceiveTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReceiveTask.m; sourceTree = "<group>"; };
+		AAD47D9A18122E8C00A934FF /* KSConnectTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSConnectTask.h; sourceTree = "<group>"; };
+		AAD47D9B18122E8C00A934FF /* KSConnectTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSConnectTask.m; sourceTree = "<group>"; };
+		AAD47D9D181234B300A934FF /* KSAcceptTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSAcceptTask.h; sourceTree = "<group>"; };
+		AAD47D9E181234B300A934FF /* KSAcceptTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSAcceptTask.m; sourceTree = "<group>"; };
+		AAD47DA11812717600A934FF /* KSClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSClientSocket.h; sourceTree = "<group>"; };
+		AAD47DA21812717600A934FF /* KSClientSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSClientSocket.m; sourceTree = "<group>"; };
+		AAD47DA41812718A00A934FF /* KSClientSocketStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSClientSocketStateMachine.h; sourceTree = "<group>"; };
+		AAD47DA51812718A00A934FF /* KSClientSocketStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSClientSocketStateMachine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC10F0A16ACE8C9002050B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC10F1116ACE8C9002050B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC10F1A16ACE8C9002050B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC10F2016ACE8C9002050B4 /* SenTestingKit.framework in Frameworks */,
+				AAC10F2216ACE8C9002050B4 /* UIKit.framework in Frameworks */,
+				AAC10F2316ACE8C9002050B4 /* Foundation.framework in Frameworks */,
+				AAC10F2616ACE8C9002050B4 /* libKSockets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA10A4381810EA6D00EB7738 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				AA10A4391810EAB000EB7738 /* KSEvent.h */,
+				AA10A43A1810EAB000EB7738 /* KSEvent.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		AAC10F0216ACE8C9002050B4 = {
+			isa = PBXGroup;
+			children = (
+				AAC10F1216ACE8C9002050B4 /* KSockets */,
+				AAC10F2716ACE8C9002050B4 /* KSocketsTests */,
+				AAC10F0F16ACE8C9002050B4 /* Frameworks */,
+				AAC10F0E16ACE8C9002050B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC10F0E16ACE8C9002050B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F0D16ACE8C9002050B4 /* libKSockets.a */,
+				AAC10F1E16ACE8C9002050B4 /* KSocketsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC10F0F16ACE8C9002050B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F1016ACE8C9002050B4 /* Foundation.framework */,
+				AAC10F1F16ACE8C9002050B4 /* SenTestingKit.framework */,
+				AAC10F2116ACE8C9002050B4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAC10F1216ACE8C9002050B4 /* KSockets */ = {
+			isa = PBXGroup;
+			children = (
+				AAD47DA01812716300A934FF /* ClientSocket */,
+				AAD47D93181228F100A934FF /* Task */,
+				AAC10F5316AD3E63002050B4 /* Receiver */,
+				AAC10F3816ACFAC4002050B4 /* Sender */,
+				AA10A4381810EA6D00EB7738 /* Event */,
+				AAC10F4616ACFB2E002050B4 /* Posix */,
+				AAC10F1316ACE8C9002050B4 /* Supporting Files */,
+			);
+			path = KSockets;
+			sourceTree = "<group>";
+		};
+		AAC10F1316ACE8C9002050B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F1416ACE8C9002050B4 /* KSockets-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC10F2716ACE8C9002050B4 /* KSocketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F2816ACE8C9002050B4 /* Supporting Files */,
+				AAA0E5CB16B4C5FD002F536E /* KSReceiveBufferTest.h */,
+				AAA0E5CC16B4C5FD002F536E /* KSReceiveBufferTest.m */,
+				AAA0E5CE16B506A1002F536E /* KSFixedSizeMessageReceiverTest.h */,
+				AAA0E5CF16B506A1002F536E /* KSFixedSizeMessageReceiverTest.m */,
+				AAA0E5D116B50CC6002F536E /* KSTerminatedMessageReceiverTest.h */,
+				AAA0E5D216B50CC6002F536E /* KSTerminatedMessageReceiverTest.m */,
+				AAA0E5D716B51574002F536E /* KSVariableSizeMessageReceiverTest.h */,
+				AAA0E5D816B51574002F536E /* KSVariableSizeMessageReceiverTest.m */,
+			);
+			path = KSocketsTests;
+			sourceTree = "<group>";
+		};
+		AAC10F2816ACE8C9002050B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F2916ACE8C9002050B4 /* KSocketsTests-Info.plist */,
+				AAC10F2A16ACE8C9002050B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC10F3816ACFAC4002050B4 /* Sender */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F3916ACFAF2002050B4 /* KSFixedSizeMessageSender.h */,
+				AAC10F3A16ACFAF2002050B4 /* KSFixedSizeMessageSender.m */,
+				AAC10F3B16ACFAF2002050B4 /* KSISender.h */,
+				AAC10F3C16ACFAF2002050B4 /* KSTerminatedMessageSender.h */,
+				AAC10F3D16ACFAF2002050B4 /* KSTerminatedMessageSender.m */,
+				AAC10F3E16ACFAF2002050B4 /* KSVariableSizeMessageSender.h */,
+				AAC10F3F16ACFAF2002050B4 /* KSVariableSizeMessageSender.m */,
+			);
+			name = Sender;
+			sourceTree = "<group>";
+		};
+		AAC10F4616ACFB2E002050B4 /* Posix */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F4716ACFB3D002050B4 /* KSPosixAPIWrapper.h */,
+				AAC10F4816ACFB3D002050B4 /* KSPosixAPIWrapper.m */,
+			);
+			name = Posix;
+			sourceTree = "<group>";
+		};
+		AAC10F5316AD3E63002050B4 /* Receiver */ = {
+			isa = PBXGroup;
+			children = (
+				AAC10F5416AD3E78002050B4 /* KSFixedSizeMessageReceiver.h */,
+				AAC10F5516AD3E78002050B4 /* KSFixedSizeMessageReceiver.m */,
+				AAC10F5616AD3E78002050B4 /* KSIReceiver.h */,
+				AAC10F5716AD3E78002050B4 /* KSTerminatedMessageReceiver.h */,
+				AAC10F5816AD3E78002050B4 /* KSTerminatedMessageReceiver.m */,
+				AAC10F5916AD3E78002050B4 /* KSVariableSizeMessageReceiver.h */,
+				AAC10F5A16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m */,
+				AAC10F6116AD432C002050B4 /* KSReceiveBuffer.h */,
+				AAC10F6216AD432C002050B4 /* KSReceiveBuffer.m */,
+			);
+			name = Receiver;
+			sourceTree = "<group>";
+		};
+		AAD47D93181228F100A934FF /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				AAD47D941812292500A934FF /* KSATask.h */,
+				AAD47D951812292500A934FF /* KSATask.m */,
+				AAD47D9718122B6E00A934FF /* KSReceiveTask.h */,
+				AAD47D9818122B6E00A934FF /* KSReceiveTask.m */,
+				AAD47D9A18122E8C00A934FF /* KSConnectTask.h */,
+				AAD47D9B18122E8C00A934FF /* KSConnectTask.m */,
+				AAD47D9D181234B300A934FF /* KSAcceptTask.h */,
+				AAD47D9E181234B300A934FF /* KSAcceptTask.m */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		AAD47DA01812716300A934FF /* ClientSocket */ = {
+			isa = PBXGroup;
+			children = (
+				AAD47DA11812717600A934FF /* KSClientSocket.h */,
+				AAAE55281813A12F00158D66 /* KSClientSocket_Internal.h */,
+				AAD47DA21812717600A934FF /* KSClientSocket.m */,
+				AAD47DA41812718A00A934FF /* KSClientSocketStateMachine.h */,
+				AAD47DA51812718A00A934FF /* KSClientSocketStateMachine.m */,
+			);
+			name = ClientSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC10F0C16ACE8C9002050B4 /* KSockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC10F3216ACE8C9002050B4 /* Build configuration list for PBXNativeTarget "KSockets" */;
+			buildPhases = (
+				AAC10F0916ACE8C9002050B4 /* Sources */,
+				AAC10F0A16ACE8C9002050B4 /* Frameworks */,
+				AAC10F0B16ACE8C9002050B4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSockets;
+			productName = KSockets;
+			productReference = AAC10F0D16ACE8C9002050B4 /* libKSockets.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AAC10F1D16ACE8C9002050B4 /* KSocketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC10F3516ACE8C9002050B4 /* Build configuration list for PBXNativeTarget "KSocketsTests" */;
+			buildPhases = (
+				AAC10F1916ACE8C9002050B4 /* Sources */,
+				AAC10F1A16ACE8C9002050B4 /* Frameworks */,
+				AAC10F1B16ACE8C9002050B4 /* Resources */,
+				AAC10F1C16ACE8C9002050B4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC10F2516ACE8C9002050B4 /* PBXTargetDependency */,
+			);
+			name = KSocketsTests;
+			productName = KSocketsTests;
+			productReference = AAC10F1E16ACE8C9002050B4 /* KSocketsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC10F0416ACE8C9002050B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Masafumi Nishida";
+			};
+			buildConfigurationList = AAC10F0716ACE8C9002050B4 /* Build configuration list for PBXProject "KSockets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAC10F0216ACE8C9002050B4;
+			productRefGroup = AAC10F0E16ACE8C9002050B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC10F0C16ACE8C9002050B4 /* KSockets */,
+				AAC10F1D16ACE8C9002050B4 /* KSocketsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC10F1B16ACE8C9002050B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC10F2C16ACE8C9002050B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAC10F1C16ACE8C9002050B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC10F0916ACE8C9002050B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC10F4016ACFAF2002050B4 /* KSFixedSizeMessageSender.m in Sources */,
+				AAC10F4216ACFAF2002050B4 /* KSTerminatedMessageSender.m in Sources */,
+				AAC10F4416ACFAF2002050B4 /* KSVariableSizeMessageSender.m in Sources */,
+				AAD47D9F181234B300A934FF /* KSAcceptTask.m in Sources */,
+				AA10A43B1810EAB000EB7738 /* KSEvent.m in Sources */,
+				AAD47D961812292500A934FF /* KSATask.m in Sources */,
+				AAD47D9C18122E8C00A934FF /* KSConnectTask.m in Sources */,
+				AAD47DA61812718A00A934FF /* KSClientSocketStateMachine.m in Sources */,
+				AAD47DA31812717600A934FF /* KSClientSocket.m in Sources */,
+				AAC10F4916ACFB3D002050B4 /* KSPosixAPIWrapper.m in Sources */,
+				AAC10F5B16AD3E78002050B4 /* KSFixedSizeMessageReceiver.m in Sources */,
+				AAC10F5D16AD3E78002050B4 /* KSTerminatedMessageReceiver.m in Sources */,
+				AAC10F5F16AD3E78002050B4 /* KSVariableSizeMessageReceiver.m in Sources */,
+				AAD47D9918122B6E00A934FF /* KSReceiveTask.m in Sources */,
+				AAC10F6316AD432C002050B4 /* KSReceiveBuffer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC10F1916ACE8C9002050B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC10F4116ACFAF2002050B4 /* KSFixedSizeMessageSender.m in Sources */,
+				AAC10F4316ACFAF2002050B4 /* KSTerminatedMessageSender.m in Sources */,
+				AAC10F4516ACFAF2002050B4 /* KSVariableSizeMessageSender.m in Sources */,
+				AAC10F4A16ACFB3D002050B4 /* KSPosixAPIWrapper.m in Sources */,
+				AAC10F5C16AD3E78002050B4 /* KSFixedSizeMessageReceiver.m in Sources */,
+				AAC10F5E16AD3E78002050B4 /* KSTerminatedMessageReceiver.m in Sources */,
+				AAC10F6016AD3E78002050B4 /* KSVariableSizeMessageReceiver.m in Sources */,
+				AAC10F6416AD432C002050B4 /* KSReceiveBuffer.m in Sources */,
+				AAA0E5CD16B4C5FD002F536E /* KSReceiveBufferTest.m in Sources */,
+				AAA0E5D016B506A1002F536E /* KSFixedSizeMessageReceiverTest.m in Sources */,
+				AAA0E5D316B50CC6002F536E /* KSTerminatedMessageReceiverTest.m in Sources */,
+				AAA0E5D916B51574002F536E /* KSVariableSizeMessageReceiverTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAC10F2516ACE8C9002050B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC10F0C16ACE8C9002050B4 /* KSockets */;
+			targetProxy = AAC10F2416ACE8C9002050B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAC10F2A16ACE8C9002050B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC10F2B16ACE8C9002050B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC10F3016ACE8C9002050B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AAC10F3116ACE8C9002050B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		AAC10F3316ACE8C9002050B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KSockets.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSockets/KSockets-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAC10F3416ACE8C9002050B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KSockets.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSockets/KSockets-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAC10F3616ACE8C9002050B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSockets/KSockets-Prefix.pch";
+				INFOPLIST_FILE = "KSocketsTests/KSocketsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AAC10F3716ACE8C9002050B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSockets/KSockets-Prefix.pch";
+				INFOPLIST_FILE = "KSocketsTests/KSocketsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC10F0716ACE8C9002050B4 /* Build configuration list for PBXProject "KSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC10F3016ACE8C9002050B4 /* Debug */,
+				AAC10F3116ACE8C9002050B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC10F3216ACE8C9002050B4 /* Build configuration list for PBXNativeTarget "KSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC10F3316ACE8C9002050B4 /* Debug */,
+				AAC10F3416ACE8C9002050B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC10F3516ACE8C9002050B4 /* Build configuration list for PBXNativeTarget "KSocketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC10F3616ACE8C9002050B4 /* Debug */,
+				AAC10F3716ACE8C9002050B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC10F0416ACE8C9002050B4 /* Project object */;
+}
