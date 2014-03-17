@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSockets", "KSockets\KSockets.csproj", "{CAC4A5CE-82C8-4659-8380-DD0A2E086371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientGUI", "ClientGUI\ClientGUI.csproj", "{875351A0-B9FA-4208-867E-67C8EB33AF6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSample", "ClientSample\ClientSample.csproj", "{B4041B7D-5493-409B-8168-772FA19B9FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleClientServerGUI", "SingleClientServerGUI\SingleClientServerGUI.csproj", "{7C1F8597-7207-4489-AD95-A027F882336D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSample(SingleClient)", "ServerSample(SingleClient)\ServerSample(SingleClient).csproj", "{5DB67B9F-28C1-46B9-A515-5507BAAA9220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiClientServerGUI", "MultiClientServerGUI\MultiClientServerGUI.csproj", "{8EBA51AC-A926-4761-B8B9-91B8F6DD83E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSample(MultiClient)", "ServerSample(MultiClient)\ServerSample(MultiClient).csproj", "{2FDD368B-B577-42BB-A065-EDB11E2A4E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +19,18 @@ Global
 		{CAC4A5CE-82C8-4659-8380-DD0A2E086371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC4A5CE-82C8-4659-8380-DD0A2E086371}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC4A5CE-82C8-4659-8380-DD0A2E086371}.Release|Any CPU.Build.0 = Release|Any CPU
-		{875351A0-B9FA-4208-867E-67C8EB33AF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{875351A0-B9FA-4208-867E-67C8EB33AF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{875351A0-B9FA-4208-867E-67C8EB33AF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{875351A0-B9FA-4208-867E-67C8EB33AF6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C1F8597-7207-4489-AD95-A027F882336D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C1F8597-7207-4489-AD95-A027F882336D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C1F8597-7207-4489-AD95-A027F882336D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C1F8597-7207-4489-AD95-A027F882336D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EBA51AC-A926-4761-B8B9-91B8F6DD83E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EBA51AC-A926-4761-B8B9-91B8F6DD83E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EBA51AC-A926-4761-B8B9-91B8F6DD83E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EBA51AC-A926-4761-B8B9-91B8F6DD83E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4041B7D-5493-409B-8168-772FA19B9FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4041B7D-5493-409B-8168-772FA19B9FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4041B7D-5493-409B-8168-772FA19B9FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4041B7D-5493-409B-8168-772FA19B9FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB67B9F-28C1-46B9-A515-5507BAAA9220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB67B9F-28C1-46B9-A515-5507BAAA9220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB67B9F-28C1-46B9-A515-5507BAAA9220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB67B9F-28C1-46B9-A515-5507BAAA9220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDD368B-B577-42BB-A065-EDB11E2A4E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDD368B-B577-42BB-A065-EDB11E2A4E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDD368B-B577-42BB-A065-EDB11E2A4E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDD368B-B577-42BB-A065-EDB11E2A4E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
