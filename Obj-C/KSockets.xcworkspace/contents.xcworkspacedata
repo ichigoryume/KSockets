@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KClientGUI/KClientGUI.xcodeproj">
+      location = "group:KClientSample/KClientSample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:KSockets/KSockets.xcodeproj">
